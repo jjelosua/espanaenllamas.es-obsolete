@@ -38,7 +38,7 @@ License
 -------
 
 *España en llamas* is released under the terms of the GNU Affero General Public
-License version 3 [1]_.
+License version 3 [1].
 
 Please read the ``LICENSE`` file for details.
 
@@ -46,11 +46,11 @@ Please read the ``LICENSE`` file for details.
 Authors
 -------
 
-This project is sponsored by *Fundación Ciudadana Civio* [2]_.
+This project is sponsored by *Fundación Ciudadana Civio* [2].
 
 Please see ``AUTHORS`` file for more information about the authors.
 
 
 
-.. [1] http://www.fsf.org/licensing/licenses/agpl.html
-.. [2] http://www.civio.es
+[1] http://www.fsf.org/licensing/licenses/agpl.html
+[2] http://www.civio.es
