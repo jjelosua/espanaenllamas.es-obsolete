@@ -1,0 +1,35 @@
+Estos datos han sido extraídos de una copia de la Base de datos EGIF que
+gestiona el ministerio de agricultura, alimentación y medio ambiente.
+
+El fichero consta de los incendios cuya superficie forestal quemada
+es mayor o igual a 100Ha dentro del periodo (2001-2010).
+
+"IDPIF","SUPQUEMADA","MUERTOS","HERIDOS","COMUNIDAD","PROVINCIA","COMARCA","MUNICIPIO","LATITUD","LONGITUD","FECHA","TIME_CTRL","TIME_EXT","IDGRUPOCAUSA","DESC_CAUSA",
+Explicación de los campos presentes en el CSV:
+-IDPIF: Identificador interno del incendio 
+-SUPQUEMADA: Superficie forestal quemada
+-MUERTOS: Número de muertos en el incendio
+-HERIDOS: Número de heridos en el incendio
+-COMUNIDAD: Nombre de la comunidad autónoma
+-PROVINCIA: Nombre de la provincia
+-COMARCA: Nombre de la comarca
+-MUNICIPIO: Nombre del municipio
+-LATITUD: Latitud geográfica del origen del incendio.
+-LONGITUD: Longitud geográfica del origen del incendio.
+-FECHA: Fecha de detección del incendio
+-TIME_CTRL: Tiempo transcurrido hasta entrar en fase de control del incendio
+(en minutos)
+-TIME_EXT: Tiempo transcurrido hasta la extinción del incendio 
+(en minutos)
+-IDGRUPOCAUSA: Identificador del grupo de causa del incendio
+-DESC_CAUSA: Descripción de la causa
+-PERSONAL: Número de personas que han participado en la 
+extinción del incendio
+-PESADOS: Número de vehículos pesados que han participado en la 
+extinción del incendio
+-AEREOS: Número de medios aéreos que han participado en la 
+extinción del incendio
+-GASTOS_EXT: Gastos de extinción asociados al incendio tal y como figuran en EGIF. 
+Muchos incendios no disponen de estas cifras.
+-PERDIDAS: Pérdidas económicas asociadas al incendio tal y como figuran en EGIF. 
+Muchos incendios no disponen de estas cifras.

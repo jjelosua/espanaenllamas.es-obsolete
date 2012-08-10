@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<title>España en LLamas</title>
+	<link rel="stylesheet" href="styles/jquery-ui/jquery.ui.all.css"/>
+	<link rel="stylesheet" href="styles/app.css"/>
+	<link rel="stylesheet" href="styles/cartela.css"/>
+	<script type="text/javascript" 
+    src="https://maps.google.com/maps/api/js?libraries=geometry,places&sensor=false"></script>
+    <script type="text/javascript" src="libs/infoBox/infobox_packed.js"></script>
+    <script type="text/javascript" src="libs/d3/d3.v2.min.js"></script>
+    <script type="text/javascript" src="libs/jquery/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="libs/jquery/jquery-ui-1.8.22.custom.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/overlay.js"></script>
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<div id="super-contenedor" class="estirar">
+	<div class="titular estirar">España en llamas <span>| Una década de incendios forestales (2001-2010)</span></div>
+	<div class="fb-send" data-href="http://www.espanaenllamas.es"></div>
+	<div class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-text="Una década de incendios forestales (2001-2010)" data-via="civio" data-lang="es" data-related="jjelosua,chiquiesteban" data-hashtags="EspañaEnLLamas">Twittear</a></div>
+   <div id="segunda-parte">
+    
+    <div id="entradilla">
+       Los 170.822 incendios ocurridos entre 2001 y 2010 quemaron 1.137.566 hectáreas, tanto como toda la Región de Murcia. En el mapa te mostramos los que acabaron con 100 o más Ha, un 61,5% del total de la superficie quemada.
+    </div>
+    
+        <div id="grandes-cifras"  class="estirar">	
+        	<div id="tit-cifras">Cifras de incendios de 100 Has o más (mostrados en el mapa)</div>
+                <ul id="gcifras-int">
+                    <li>1.508 <span>incendios</span></li> 
+                    <li>699.560 <span>Ha quemadas</span></li>
+                    <li>24 <span>muertos</span></li>
+                    <li>191 <span>heridos</span></li>
+                    <li class="ultimo">623M€ <span>en pérdidas</span></li>
+                </ul>
+        </div>
+    
+    </div>
+    
+    <div id="botoneraint" class="estirar">
+            <ul id="botones-int">
+                <li id="pHis"><a href="#historias"><div class="button">Visita guiada</div></a></li>
+                <li id="pExp"><a href="#explora"><div class="button">Explore los incendios</div></a></li>
+            </ul>
+    </div>
+    
+    <div id="historias" class="capitulo">   
+    	<div id="botones-lat"> 	
+			<div id="1" class="titular-his">Incendios Intencionados</div>
+			<div id="2" class="titular-his">Grandes Incendios Forestales</div>
+            <div id="8" class="titular-his">Espacios naturales protegidos</div>
+            <div id="3" class="titular-his">27 de julio: el día con más incendios</div>
+			<div id="4" class="titular-his">Los rayos encienden Extremadura</div>
+            <div id="5" class="titular-his">2005: El peor año de la década</div>
+            <div id="6" class="titular-his">2006: Galicia - Año Negro</div>
+            <div id="7" class="titular-his">2007: Canarias</div> 
+        </div>
+        
+        <div id="textos-historias">
+        	<div id="t1" class="txtf">
+        	<p>El hombre es el principal causante de la mayoría de los 170.822 incendios ocurridos entre 2001 y 2010. Alrededor del 55 por ciento se iniciaron de manera intencionada.</p>
+ 
+<p>El mayor número de hectáreas se quemaron en Galicia, donde más del 80 por ciento de los incendios fueron intencionados. Allí ocurrió el grueso de los fuegos atribuidos a pirómanos, aunque los expertos cuestionan el uso indiscriminado del término “pirómano” en esta comunidad. Además, las causas de los incendios son supuestas en gran parte de los casos.</p>
+ 
+<p>Los datos económicos sobre pérdidas y el gasto en extinción son muy incompletos. Aún así, se puede afirmar que, como mínimo, los incendios costaron alrededor de 1.000 millones de euros.</p>
+
+        	</div>
+        	<div id="t2" class="txtf">
+        	<p>Los incendios de más de 500 hectáreas, denominados “grandes incendios forestales”, son pocos en número, pero proporcionalmente son los más devastadores. Representan tan solo el 0.2 por cierto de todos los incendios en la década, aunque son los culpables del 39 por ciento de la superficie quemada.</p>
+ 
+<p>Las organizaciones ecologistas aseguran que reduciendo este tipo de incendios se mejoraría el problema del fuego en nuestro país. Además, insisten en que la mejor política es la prevención. Sin embargo, casi nunca se cumple la ley. Un <a href="http://awsassets.wwf.es/downloads/gap.pdf" target="_blank">estudio de WWF de 2008</a> encontró que un 87 de los montes no tenían el obligado plan de gestión.</p>
+        	</div>
+            
+        	<div id="t3" class="txtf">
+        	<p>El clima es un factor clave para que los fuegos se inicien y propaguen rápidamente. Más de la mitad de la superficie quemada durante la década ardió entre junio y septiembre. Agosto es el mes en el que más incendios ocurrieron. Sin embargo, el día que más destaca es el 27 de julio: 834 incendios en diferentes años que representan casi un cinco por ciento de todas las hectáreas quemadas.</p>
+ 
+<p>Ese día, en 2004, comenzó un fuego en Minas de Riotinto (Huelva), que acabaría siendo el más grande de la década. Quemó 29.867 hectáreas. Los datos del Ministerio de Agricultura no muestran víctimas mortales, pero en los medios se informó de <a href="http://www.elmundo.es/elmundo/2011/10/08/andalucia/1318064718.html" target="_blank">la muerte de un matrimonio</a>.</p>
+ <div class="butFire" id="2004210126">Ver incendio</div>
+<p>El peor incendio de las islas Canarias también se inició, intencionadamente, un 27 de julio.</p>
+<div class="butFire" id="2007350042">Ver incendio</div>
+        	</div>
+        	<div id="t4" class="txtf">
+        	Las tormentas secas del verano de 2003 hicieron arder Extremadura. Los rayos iniciaron los incendios más devastadores: 15 en los dos primeros días de agosto, que acabaron con más de 16.500 hectáreas. Los expertos dicen que la destrucción habría sido menor si los montes hubieran estado mejor preparados para evitar las llamas.
+<br /><br />
+Ese año se quemaron más de un tercio de todas las hectáreas forestales que la comunidad autónoma perdió al fuego durante la década.
+
+        	</div>
+        	<div id="t5" class="txtf">
+        	Las cifras de 2005 superan al resto de años de la década en todos los indicadores: número de incendios, superficie quemada, heridos y muertos. Ardieron 188.697 hectáreas, un sexto de todas las del período.
+ <br /><br />
+El peor incendio empezó el 16 de julio en Riba de Saelices (Guadalajara). Un fuego provocado por la barbacoa de unos excursionistas acabó con la vida de 11 trabajadores que intentaban controlar las llamas. Se tardó 17 días en extinguirlo y quemó más de 12.700 hectáreas.
+ <br /><br />
+Es de los pocos incendios que ha terminado en los tribunales. La Audiencia Provincial de Guadalajara <a href="http://www.elmundo.es/elmundo/2012/07/09/espana/1341836924.html" target="_blank">condenó el pasado julio</a> a Marcelino H.S. a dos años de prisión y al pago de más de 10 millones de euros de indemnización. Sus otros dos compañeros fueron absueltos.
+        	</div>
+        	<div id="t6" class="txtf">
+        	Galicia es la comunidad autónoma donde ha habido más incendios. Allí ocurrieron un 40 por ciento de los producidos en España entre 2001 y 2010. La mayoría eran intencionados. Como consecuencia, Galicia ha perdido cerca del 15 por ciento de su superficie forestal. Pontevedra y Orense fueron las provincias más afectadas.
+<br /><br />
+2006 fue el peor año, cuando los incendios fueron más devastadores. Tan solo en julio y agosto se declararon más de 4.000. Para finales de diciembre las llamas habían acabado con 95.947 hectáreas de superficie forestal, un tercio de las quemadas durante la década en la comunidad.
+        	</div>
+        	<div id="t7" class="txtf">
+        	El 80 por ciento de las hectáreas quemadas en Canarias durante la década se perdieron en un solo año, 2007. Dos incendios intencionados, uno en Las Palmas y otro en Tenerife, fueron los más devastadores. Entre los asoladores efectos se encuentra la destrucción de sus parques naturales.
+<br /><br />
+El primer incendio comenzó el 27 de julio en Tejeda (Las Palmas). Duró 29 días y quemó 18.673 hectáreas. Las llamas alcanzaron la Reserva Natural de Inagua, un pinar de unas 3.500 hectáreas que quedó abrasado casi por completo.
+
+Tres días después, el 30 de julio, otro fuego iniciado en Los Realejos (Tenerife) acabó con el 86 por ciento de las hectáreas forestales del Parque Nacional de Las Cañadas del Teide.
+        	</div>
+            <div id="t8" class="txtf">
+        	Casi un 20 por ciento del suelo calcinado entre 2005 (primer dato disponible) y 2010 era parte de un espacio natural protegido. El hecho de llamarse “protegido” no les salva de las llamas.
+<bR /><br />
+Un caso llamativo es el Parque Natural del Lago de Sanabria (Zamora), el mayor lago de origen glaciar de la Península. En tan solo seis años ha sufrido 126 incendios, que han abrasado casi 12.000 hectáreas.
+<br /><br />
+Casi todos los fuegos eran intencionados. Entre las principales causas detectadas se encuentran la regeneración de pastos y eliminación de matorrales por parte de pastores y ganaderos o la reproducción de fuegos mal extinguidos.
+        	</div>
+            
+            
+        	<div id="explicacion" class="txtf">
+				<p>La <a  target="_blank"="http://civio.es">Fundación Ciudadana Civio</a>, ha tenido acceso a la base de datos nacional de incendios forestales del Ministerio de Agricultura, Alimentación y Medio Ambiente. Hasta ahora, solo había <a href="http://www.magrama.gob.es/es/biodiversidad/temas/defensa-contra-incendios-forestales/estadisticas-de-incendios-forestales/" target="_blank">estadísticas</a>. Por primera vez, información tan detallada sobre incendios ve la luz pública.</p>
+ 
+<p>"Visita guiada" es una selección de ocho historias destacadas entre 2001 y 2010 (últimos datos disponibles).</p>
+ 
+<p>En "Explore los incendios" puede interactuar con los fuegos de 100 hectáreas o más, seleccionar aquéllos que más le interesen o localizar los cercanos a un municipio. Esta es una buena herramienta para poner en contexto los incendios que están ocurriendo.</p>
+ 
+<p>Abajo, podrá ver qué pasó año a año o incluso descargar los datos para comprobarlos.</p>
+        	</div>
+        </div>
+        
+    	<div class="cuadro">	
+            <div class="cuadro-historia" id="primera-historia">
+      		<div class="titf"></div>
+            <div class="txtf">
+            </div>  
+            <!--<div class="antsgt">
+            	<div id="anterior" class="ant button">Anterior</div>
+                <div id="siguiente" class="ant button">Siguiente</div>
+            </div>-->
+      		</div>
+        </div>
+        
+    
+    </div>
+    
+    <div id="explora" class="capitulo">
+    
+    	<div id="datos-flotantes">
+        	<div class="extra-datos">Estos son los incendios según la selección realizada arriba. Por defecto salen los de 100 Ha o más.</div>
+        
+        	<ul>
+            	<li>
+                	<div class="titulo-datos">Incendios</div>
+                    <div id="count" class="resultado-datos">-</div>
+                </li>
+                <li>
+                	<div class="titulo-datos">Ha quemadas</div>
+                    <div id="supQ" class="resultado-datos">-</div>
+                </li>
+                <li>
+                	<div class="titulo-datos">Muertos</div>
+                    <div id="muer" class="resultado-datos">-</div>
+                </li>
+                <li>
+                	<div class="titulo-datos">Heridos</div>
+                    <div id="heri" class="resultado-datos">-</div>
+                </li>
+                <li>
+                	<div class="titulo-datos">Pérdidas generadas</div>
+                    <div id="perd" class="resultado-datos">-</div>
+                </li>
+            </ul>
+        </div>
+        
+    	<div id="selectores"> 
+			<div id="causas" class="selector"><span>Causa del incendio</span>
+				<ul>
+					<li><select id="cau" name="menu">
+						<option class="optionGroup" value="0" selected>Todas</option>
+						<option class="optionChild" value="1">Intencionado</option>
+						<option class="optionChild" value="2">No Intencionado</option>
+						</select>
+					</li>
+				</ul>
+			</div>
+			<div id="sinies" class="selector"><span>Siniestralidad</span>
+				<ul>
+					<li><select id="sin" name="menu">
+						<option class="optionGroup" value="0" selected>Todos</option>
+						<option class="optionChild" value="1">Con Muertos</option>
+						<option class="optionChild" value="2">Con Heridos</option>
+						</select>
+					</li>
+				</ul>
+			</div>
+            <div id="localiz" class="selector"><span>Por localización</span>
+				<ul>
+					<li><select id="loc" name="menu">
+						<option class="optionGroup" value="0;0" selected>Todas</option>
+						<option disabled>----------</option>
+						<option class="optionGroup" value="4;0"><strong>Andalucía</strong></option>
+						<option class="optionChild" value="4;4">&nbsp;&nbsp;&nbsp;&nbsp;Almería</option>
+						<option class="optionChild" value="4;11">&nbsp;&nbsp;&nbsp;&nbsp;Cádiz</option>
+						<option class="optionChild" value="4;14">&nbsp;&nbsp;&nbsp;&nbsp;Córdoba</option>
+						<option class="optionChild" value="4;18">&nbsp;&nbsp;&nbsp;&nbsp;Granada</option>
+						<option class="optionChild" value="4;21">&nbsp;&nbsp;&nbsp;&nbsp;Huelva</option>
+						<option class="optionChild" value="4;23">&nbsp;&nbsp;&nbsp;&nbsp;Jaén</option>
+						<option class="optionChild" value="4;29">&nbsp;&nbsp;&nbsp;&nbsp;Málaga</option>
+						<option class="optionChild" value="4;41">&nbsp;&nbsp;&nbsp;&nbsp;Sevilla</option>
+						<option disabled>----------</option>
+						<option class="optionGroup" value="10;0"><strong>Aragón</strong></option> 
+						<option class="optionChild" value="10;22">&nbsp;&nbsp;&nbsp;&nbsp;Huesca</option>
+						<option class="optionChild" value="10;44">&nbsp;&nbsp;&nbsp;&nbsp;Teruel</option>
+						<option class="optionChild" value="10;50">&nbsp;&nbsp;&nbsp;&nbsp;Zaragoza</option>
+						<option disabled>----------</option>
+						<option class="optionGroup" value="5;33"><strong>Asturias</strong></option>
+						<option disabled>----------</option>
+						<option class="optionGroup" value="15;7"><strong>Islas Baleares</strong></option>
+						<option disabled>----------</option>
+						<option class="optionGroup" value="12;0"><strong>Islas Canarias</strong></option>
+						<option class="optionChild" value="12;35">&nbsp;&nbsp;&nbsp;&nbsp;Las Palmas</option>
+						<option class="optionChild" value="12;38">&nbsp;&nbsp;&nbsp;&nbsp;S.C. de Tenerife</option>
+						<option disabled>----------</option>
+						<option class="optionGroup" value="6;39"><strong>Cantabria</strong></option>
+						<option disabled>----------</option>
+						<option class="optionGroup" value="11;0"><strong>Castilla-La Mancha</strong></option>
+						<option class="optionChild" value="11;2">&nbsp;&nbsp;&nbsp;&nbsp;Albacete</option>
+						<option class="optionChild" value="11;13">&nbsp;&nbsp;&nbsp;&nbsp;Ciudad Real</option>
+						<option class="optionChild" value="11;16">&nbsp;&nbsp;&nbsp;&nbsp;Cuenca</option>
+						<option class="optionChild" value="11;19">&nbsp;&nbsp;&nbsp;&nbsp;Guadalajara</option>
+						<option class="optionChild" value="11;45">&nbsp;&nbsp;&nbsp;&nbsp;Toledo</option>
+						<option disabled>----------</option>
+						<option class="optionGroup" value="17;0"><strong>Castilla y León</strong></option>
+						<option class="optionChild" value="17;5">&nbsp;&nbsp;&nbsp;&nbsp;Ávila</option>
+						<option class="optionChild" value="17;9">&nbsp;&nbsp;&nbsp;&nbsp;Burgos</option>
+						<option class="optionChild" value="17;24">&nbsp;&nbsp;&nbsp;&nbsp;León</option>
+						<option class="optionChild" value="17;34">&nbsp;&nbsp;&nbsp;&nbsp;Palencia</option>
+						<option class="optionChild" value="17;37">&nbsp;&nbsp;&nbsp;&nbsp;Salamanca</option>
+						<option class="optionChild" value="17;40">&nbsp;&nbsp;&nbsp;&nbsp;Segovia</option>
+						<option class="optionChild" value="17;42">&nbsp;&nbsp;&nbsp;&nbsp;Soria</option>
+						<option class="optionChild" value="17;47">&nbsp;&nbsp;&nbsp;&nbsp;Valladolid</option>
+						<option class="optionChild" value="17;49">&nbsp;&nbsp;&nbsp;&nbsp;Zamora</option>
+						<option disabled>----------</option>
+						<option class="optionGroup" value="2;0"><strong>Cataluña</strong></option>
+						<option class="optionChild" value="2;8">&nbsp;&nbsp;&nbsp;&nbsp;Barcelona</option>
+						<option class="optionChild" value="2;17">&nbsp;&nbsp;&nbsp;&nbsp;Girona</option>
+						<option class="optionChild" value="2;25">&nbsp;&nbsp;&nbsp;&nbsp;Lleida</option>
+						<option class="optionChild" value="2;43">&nbsp;&nbsp;&nbsp;&nbsp;Tarragona</option>
+						<option disabled>----------</option>
+						<option class="optionGroup" value="9;0"><strong>Comunidad Valenciana</strong></option>
+						<option class="optionChild" value="9;3">&nbsp;&nbsp;&nbsp;&nbsp;Alicante</option>
+						<option class="optionChild" value="9;12">&nbsp;&nbsp;&nbsp;&nbsp;Castellón</option>
+						<option class="optionChild" value="9;46">&nbsp;&nbsp;&nbsp;&nbsp;Valencia</option>
+						<option disabled>----------</option>
+						<option class="optionGroup" value="14;0"><strong>Extremadura</strong></option>
+						<option class="optionChild" value="14;6">&nbsp;&nbsp;&nbsp;&nbsp;Badajoz</option>
+						<option class="optionChild" value="14;10">&nbsp;&nbsp;&nbsp;&nbsp;Cáceres</option>
+						<option disabled>----------</option>
+						<option class="optionGroup" value="3;0"><strong>Galicia</strong></option>
+						<option class="optionChild" value="3;15">&nbsp;&nbsp;&nbsp;&nbsp;A Coruña</option>
+						<option class="optionChild" value="3;27">&nbsp;&nbsp;&nbsp;&nbsp;Lugo</option>
+						<option class="optionChild" value="3;32">&nbsp;&nbsp;&nbsp;&nbsp;Ourense</option>
+						<option class="optionChild" value="3;36">&nbsp;&nbsp;&nbsp;&nbsp;Pontevedra</option>
+						<option disabled>----------</option>
+						<option class="optionGroup" value="16;28"><strong>Madrid</strong></option>
+						<option disabled>----------</option>
+						<option class="optionGroup" value="8;30"><strong>Murcia</strong></option>
+						<option disabled>----------</option>
+						<option class="optionGroup" value="13;31"><strong>Navarra</strong></option>
+						<option disabled>----------</option>
+						<option class="optionGroup" value="7;26"><strong>La Rioja</option>
+						<option disabled>----------</option>
+						<option class="optionGroup" value="1;0"><strong>País Vasco</strong></option>
+						<option class="optionChild" value="1;1">&nbsp;&nbsp;&nbsp;&nbsp;Álava</option>
+						<option class="optionChild" value="1;20">&nbsp;&nbsp;&nbsp;&nbsp;Guipúzcoa</option>
+						<option class="optionChild" value="1;48">&nbsp;&nbsp;&nbsp;&nbsp;Vizcaya</option>
+						<option disabled>----------</option>
+						<option class="optionGroup" value="18;51"><strong>Ceuta</strong></option>
+						<option disabled>----------</option>
+						<option class="optionGroup" value="19;52"><strong>Melilla</strong></option>
+						</select>
+					</li>
+				</ul>
+            </div>
+            
+            
+			<div id="supSlider" class="selector"><span>Superficie quemada (Ha)</span>
+				<div class="layout-slider">
+					<div id="slider"></div>
+					<input type="text" id="range"/>
+				</div>
+			</div>
+			
+            <div class="reestab">Reestablecer mapa</div>
+			</div>
+        
+        <div class="cuadro-busq">
+        	<div class="buscadores">Busca tu municipio</div>
+            <div class="busq-wrapper">
+            	<input id="busqueda" type="text">
+            </div>
+            
+            <div class="butira">
+            	<div id="ir" class="ant button">Ir</div>
+            </div>
+         </div>
+ 
+    </div>
+    
+     <div id="columna-dcha" class="estirar">
+		<div id="main" class="estirar">
+        	<div class="leyenda-burbujas"><span>El tamaño de las burbujas es el tamaño real de la superficie quemada</span></div>
+			
+            <div id="mapa" ></div>
+            
+            <div class="mapa-canarias"><img src="img/canarias.png" alt="Mapa de Canarias" title="Pulsa para localizar el mapa en Canarias"/></div>
+            <div class="claves-fuegos">
+				<ul id="intenono">
+					<li><div class="fuego-int"></div> Fuego intencionado</li>
+					<li><div class="fuego-noint"></div> Fuego no intencionado</li>
+				</ul>
+			</div>
+		</div>
+	</div> 
+    
+    <div id="timSlider">
+			<div id="playBtn" class="play" style="float: left;"></div>
+			<div id="yearnavbar" style="float: left;"></div>
+		</div>
+        
+        <div id="descargas">
+			<div id="descargar-btn" class="button ant">Descargar datos</div>
+            <div id="metod-btn" class="button ant">Cómo se hizo</div>
+		</div>
+     
+     
+    <div class="firmafuente">Realizado por la <a href="http://civio.es" target="_blank">Fundación Ciudadana Civio</a>, en colaboración con <a href="http://twitter.com/jjelosua/" target="_blank">Juan Elosua</a> y <a href="http://thisisvisual.info" target="_blank">This is Visual</a>.<br />
+	<strong>Fuente:</strong> Base de Datos Nacional de Incendios Forestales (EGIF) 2001-2010. Si la geolocalización exacta del incendio no estaba disponible se utilizó una aproximación al municipio.</div>
+        
+    </div>
+    
+
+    <div id="loading" style="clear:both;">Por favor espere, estamos descargando los datos</div>        
+  </div> 
+</body>
+</html>

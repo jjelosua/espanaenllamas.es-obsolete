@@ -1,0 +1,269 @@
+{"ccaas":[
+        {"id" : "4",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 38.72889070,
+                  "lng" : -1.62768260
+               },
+               "southwest" : {
+                  "lat" : 36.00011310,
+                  "lng" : -7.522701799999999
+               }
+            }
+        }
+        },    
+        {"id" : "10",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 42.92332610,
+                  "lng" : 0.77075280
+               },
+               "southwest" : {
+                  "lat" : 39.84692030,
+                  "lng" : -2.17475770
+               }
+            }
+        }
+        },
+         {"id" : "5",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 43.65923170,
+                  "lng" : -4.51043720
+               },
+               "southwest" : {
+                  "lat" : 42.88138530,
+                  "lng" : -7.182751499999999
+               }
+            }
+        }
+        }, 
+         {"id" : "15",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 40.09458670,
+                  "lng" : 4.327985099999999
+               },
+               "southwest" : {
+                  "lat" : 38.64047970,
+                  "lng" : 1.18798890
+               }
+            }
+        }
+        }, 
+         {"id" : "12",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 29.41496580,
+                  "lng" : -13.41921180
+               },
+               "southwest" : {
+                  "lat" : 27.63775040,
+                  "lng" : -18.16067630
+               }
+            }
+        }
+        },  
+         {"id" : "6",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 43.51354910,
+                  "lng" : -3.14985560
+               },
+               "southwest" : {
+                  "lat" : 42.75892160,
+                  "lng" : -4.85305070
+               }
+            }
+        }
+        },   
+         {"id" : "11",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 41.32806679999999,
+                  "lng" : -0.91579040
+               },
+               "southwest" : {
+                  "lat" : 38.02005480,
+                  "lng" : -5.406880399999999
+               }
+            }
+        }
+        },   
+         {"id" : "17",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 43.23809120,
+                  "lng" : -1.77480490
+               },
+               "southwest" : {
+                  "lat" : 40.08244780,
+                  "lng" : -7.07695490
+               }
+            }
+        }
+        },  
+         {"id" : "2",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 42.86151610,
+                  "lng" : 3.3325010
+               },
+               "southwest" : {
+                  "lat" : 40.5227880,
+                  "lng" : 0.15950860
+               }
+            }
+        }
+        },  
+         {"id" : "9",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 40.78872850,
+                  "lng" : 0.69154370
+               },
+               "southwest" : {
+                  "lat" : 37.84389650,
+                  "lng" : -1.52384760
+               }
+            }
+        }
+        }, 
+         {"id" : "14",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 40.48647420,
+                  "lng" : -4.64846030
+               },
+               "southwest" : {
+                  "lat" : 37.94048610000001,
+                  "lng" : -7.54164760
+               }
+            }
+        }
+        }, 
+         {"id" : "3",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 43.79038810,
+                  "lng" : -6.732997200000001
+               },
+               "southwest" : {
+                  "lat" : 41.80781390,
+                  "lng" : -9.29949950
+               }
+            }
+        }
+        }, 
+         {"id" : "16",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 41.16491060,
+                  "lng" : -3.05313220
+               },
+               "southwest" : {
+                  "lat" : 39.88453660,
+                  "lng" : -4.57917450
+               }
+            }
+        }
+        },  
+         {"id" : "8",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 38.75479090,
+                  "lng" : -0.68806660
+               },
+               "southwest" : {
+                  "lat" : 37.37381420,
+                  "lng" : -2.34387890
+               }
+            }
+        }
+        }, 
+         {"id" : "13",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 43.31522830,
+                  "lng" : -0.7238846999999999
+               },
+               "southwest" : {
+                  "lat" : 41.9102180,
+                  "lng" : -2.50094260
+               }
+           }
+        }
+        }, 
+        {"id" : "7",
+        "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 42.64451770,
+                  "lng" : -1.67962290
+               },
+               "southwest" : {
+                  "lat" : 41.91869420,
+                  "lng" : -3.13449120
+               }
+            }
+        }
+        },  
+         {"id" : "1",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 43.45668970,
+                  "lng" : -1.72904240
+               },
+               "southwest" : {
+                  "lat" : 42.47193270,
+                  "lng" : -3.45066830
+               }
+            }
+        }
+        },   
+         {"id" : "18",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 35.91798989999999,
+                  "lng" : -5.2781690
+               },
+               "southwest" : {
+                  "lat" : 35.87086770,
+                  "lng" : -5.38220950
+               }
+            }
+        }
+        }, 
+         {"id" : "19",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 35.32019650,
+                  "lng" : -2.92322440
+               },
+               "southwest" : {
+                  "lat" : 35.26547430,
+                  "lng" : -2.97036190
+               }
+            }
+        }
+        }
+]}
+            
