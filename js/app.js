@@ -332,7 +332,7 @@ $(document).ready(function(){
 	
 	//Facebook share
 	$("div.facebook").click(function() {
-		var url = "http://www.espanaenllamas.es"
+		var url = "http://www.espanaenllamas.es/"
 		var call = "http://www.facebook.com/sharer.php?u="+encodeURIComponent(url);
 		window.open(call,'ventanacompartir', 'toolbar=0, status=0, width=650, height=450, left=400, top=50');    
 		return false;
