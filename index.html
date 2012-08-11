@@ -15,6 +15,17 @@
     <script type="text/javascript" src="libs/jquery/jquery-ui-1.8.22.custom.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/overlay.js"></script>
+    <script type="text/javascript">
+		var _gaq = _gaq || [];
+  		_gaq.push(['_setAccount', 'UA-34028059-1']);
+  		_gaq.push(['_trackPageview']);
+
+  		(function() {
+    		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  		})();
+	</script>
 </head>
 
 <body>
@@ -34,16 +45,16 @@
    <div id="segunda-parte">
     
     <div id="entradilla">
-       Los 170.822 incendios ocurridos entre 2001 y 2010 quemaron 1.137.566 hectáreas, tanto como toda la Región de Murcia. En el mapa te mostramos los que acabaron con 100 o más Ha, un 61,5% del total de la superficie quemada.
+       Los 170.822 incendios ocurridos entre 2001 y 2010 quemaron 1.137.566 hectáreas (ha), tanto como toda la Región de Murcia. En el mapa te mostramos los que acabaron con 100 o más ha, un 61,5% del total de la superficie quemada.
     </div>
     
         <div id="grandes-cifras"  class="estirar">	
-        	<div id="tit-cifras">Cifras de incendios de 100 Has o más (mostrados en el mapa)</div>
+        	<div id="tit-cifras">Cifras de incendios de 100 hectáreas o más (mostrados en el mapa)</div>
                 <ul id="gcifras-int">
                     <li>1.508 <span>incendios</span></li> 
-                    <li>699.560 <span>Ha quemadas</span></li>
+                    <li>699.560 <span>ha quemadas</span></li>
                     <li>24 <span>muertos</span></li>
-                    <li>191 <span>heridos</span></li>
+                    <li>191 <span>heridos</span></li>¿
                     <li class="ultimo">623M€ <span>en pérdidas</span></li>
                 </ul>
         </div>
@@ -53,20 +64,20 @@
     <div id="botoneraint" class="estirar">
             <ul id="botones-int">
                 <li id="pHis"><a href="#historias"><div class="button">Visita guiada</div></a></li>
-                <li id="pExp"><a href="#explora"><div class="button">Explore los incendios</div></a></li>
+                <li id="pExp"><a href="#explora"><div class="button">Explora los incendios</div></a></li>
             </ul>
     </div>
     
     <div id="historias" class="capitulo">   
     	<div id="botones-lat"> 	
-			<div id="1" class="titular-his">Incendios Intencionados</div>
+			<div id="1" class="titular-his">La mayoría son incendios Intencionados</div>
 			<div id="2" class="titular-his">Grandes Incendios Forestales</div>
-            <div id="8" class="titular-his">Espacios naturales protegidos</div>
-            <div id="3" class="titular-his">27 de julio: el día con más incendios</div>
-			<div id="4" class="titular-his">Los rayos encienden Extremadura</div>
+            <div id="8" class="titular-his">Espacios Naturales... ¿Protegidos?</div>
+            <div id="3" class="titular-his">27 de julio: El día con más incendios</div>
+			<div id="4" class="titular-his">2003: Rayos en Extremadura</div>
             <div id="5" class="titular-his">2005: El peor año de la década</div>
-            <div id="6" class="titular-his">2006: Galicia - Año Negro</div>
-            <div id="7" class="titular-his">2007: Canarias</div> 
+            <div id="6" class="titular-his">2006: Año negro en Galicia</div>
+            <div id="7" class="titular-his">2007: El fuego arrasa Canarias</div> 
         </div>
         
         <div id="textos-historias">
@@ -79,13 +90,16 @@
 
         	</div>
         	<div id="t2" class="txtf">
-        	<p>Los incendios de más de 500 hectáreas, denominados “grandes incendios forestales”, son pocos en número, pero proporcionalmente son los más devastadores. Representan tan solo el 0.2 por cierto de todos los incendios en la década, aunque son los culpables del 39 por ciento de la superficie quemada.</p>
+        	<p>Los incendios de 500 hectáreas o más, denominados "grandes incendios forestales", son pocos en número, pero proporcionalmente son los más devastadores. Representan tan solo el 0.2 por cierto de todos los incendios en la década, aunque son los culpables del 40 por ciento de la superficie quemada.
+</p>
+            
+            <p>Las únicas comunidades en las que no ha habido uno en la última década son las Islas Baleares y La Rioja.</p>
  
-<p>Las organizaciones ecologistas aseguran que reduciendo este tipo de incendios se mejoraría el problema del fuego en nuestro país. Además, insisten en que la mejor política es la prevención. Sin embargo, casi nunca se cumple la ley. Un <a href="http://awsassets.wwf.es/downloads/gap.pdf" target="_blank">estudio de WWF de 2008</a> encontró que un 87 de los montes no tenían el obligado plan de gestión.</p>
+<p>Algunas organizaciones ecologistas aseguran que reduciendo este tipo de incendios se mejoraría el problema del fuego en nuestro país. Todas insisten en que la mejor política es la prevención.</p>
         	</div>
             
         	<div id="t3" class="txtf">
-        	<p>El clima es un factor clave para que los fuegos se inicien y propaguen rápidamente. Más de la mitad de la superficie quemada durante la década ardió entre junio y septiembre. Agosto es el mes en el que más incendios ocurrieron. Sin embargo, el día que más destaca es el 27 de julio: 834 incendios en diferentes años que representan casi un cinco por ciento de todas las hectáreas quemadas.</p>
+        	<p>El clima es un factor clave para que los fuegos se inicien y propaguen rápidamente. Más del 70 por ciento de la superficie quemada durante la década ardió entre junio y septiembre. Agosto es el mes en el que más incendios ocurrieron. Sin embargo, el día que más destaca es el 27 de julio: 834 incendios en diferentes años que representan casi un cinco por ciento de todas las hectáreas quemadas.</p>
  
 <p>Ese día, en 2004, comenzó un fuego en Minas de Riotinto (Huelva), que acabaría siendo el más grande de la década. Quemó 29.867 hectáreas. Los datos del Ministerio de Agricultura no muestran víctimas mortales, pero en los medios se informó de <a href="http://www.elmundo.es/elmundo/2011/10/08/andalucia/1318064718.html" target="_blank">la muerte de un matrimonio</a>.</p>
  <div class="butFire" id="2004210126">Ver incendio</div>
@@ -93,9 +107,9 @@
 <div class="butFire" id="2007350042">Ver incendio</div>
         	</div>
         	<div id="t4" class="txtf">
-        	Las tormentas secas del verano de 2003 hicieron arder Extremadura. Los rayos iniciaron los incendios más devastadores: 15 en los dos primeros días de agosto, que acabaron con más de 16.500 hectáreas. Los expertos dicen que la destrucción habría sido menor si los montes hubieran estado mejor preparados para evitar las llamas.
-<br /><br />
-Ese año se quemaron más de un tercio de todas las hectáreas forestales que la comunidad autónoma perdió al fuego durante la década.
+        	<p>Las tormentas secas del verano de 2003 hicieron arder Extremadura. Los rayos iniciaron los incendios más devastadores: 15 en los dos primeros días de agosto, que acabaron con más de 16.500 hectáreas. WWF indica que la destrucción habría sido menor si los montes hubieran estado mejor preparados para evitar las llamas. 
+</p><p>
+Ese año se quemaron más de un tercio de todas las hectáreas forestales que la comunidad autónoma perdió al fuego durante la década.</p>
 
         	</div>
         	<div id="t5" class="txtf">
@@ -103,7 +117,7 @@ Ese año se quemaron más de un tercio de todas las hectáreas forestales que la
  <br /><br />
 El peor incendio empezó el 16 de julio en Riba de Saelices (Guadalajara). Un fuego provocado por la barbacoa de unos excursionistas acabó con la vida de 11 trabajadores que intentaban controlar las llamas. Se tardó 17 días en extinguirlo y quemó más de 12.700 hectáreas.
  <br /><br />
-Es de los pocos incendios que ha terminado en los tribunales. La Audiencia Provincial de Guadalajara <a href="http://www.elmundo.es/elmundo/2012/07/09/espana/1341836924.html" target="_blank">condenó el pasado julio</a> a Marcelino H.S. a dos años de prisión y al pago de más de 10 millones de euros de indemnización. Sus otros dos compañeros fueron absueltos.
+Es de los pocos casos que ha terminado en los tribunales. La Audiencia Provincial de Guadalajara <a href="http://www.elmundo.es/elmundo/2012/07/09/espana/1341836924.html" target="_blank">condenó el pasado julio</a> a Marcelino H.S. a dos años de prisión y al pago de más de 10 millones de euros de indemnización. Sus otros dos compañeros fueron absueltos.
         	</div>
         	<div id="t6" class="txtf">
         	Galicia es la comunidad autónoma donde ha habido más incendios. Allí ocurrieron un 40 por ciento de los producidos en España entre 2001 y 2010. La mayoría eran intencionados. Como consecuencia, Galicia ha perdido cerca del 15 por ciento de su superficie forestal. Pontevedra y Orense fueron las provincias más afectadas.
@@ -115,25 +129,26 @@ Es de los pocos incendios que ha terminado en los tribunales. La Audiencia Provi
 <br /><br />
 El primer incendio comenzó el 27 de julio en Tejeda (Las Palmas). Duró 29 días y quemó 18.673 hectáreas. Las llamas alcanzaron la Reserva Natural de Inagua, un pinar de unas 3.500 hectáreas que quedó abrasado casi por completo.
 
-Tres días después, el 30 de julio, otro fuego iniciado en Los Realejos (Tenerife) acabó con el 86 por ciento de las hectáreas forestales del Parque Nacional de Las Cañadas del Teide.
+Tres días después, el 30 de julio, otro fuego iniciado en Los Realejos (Tenerife) acabó con el 89 por ciento de la superficie del Parque Nacional de Las Cañadas del Teide.
         	</div>
             <div id="t8" class="txtf">
-        	Casi un 20 por ciento del suelo calcinado entre 2005 (primer dato disponible) y 2010 era parte de un espacio natural protegido. El hecho de llamarse “protegido” no les salva de las llamas.
-<bR /><br />
-Un caso llamativo es el Parque Natural del Lago de Sanabria (Zamora), el mayor lago de origen glaciar de la Península. En tan solo seis años ha sufrido 126 incendios, que han abrasado casi 12.000 hectáreas.
-<br /><br />
-Casi todos los fuegos eran intencionados. Entre las principales causas detectadas se encuentran la regeneración de pastos y eliminación de matorrales por parte de pastores y ganaderos o la reproducción de fuegos mal extinguidos.
+        	<p>Casi un 20 por ciento del suelo calcinado entre 2005 (primer dato disponible) y 2010 era parte de un espacio natural protegido. El hecho de llamarse "protegido" no les salva de las llamas. </p>
+
+<p>Un caso llamativo es el Parque Natural del Lago de Sanabria (Zamora), el mayor lago de origen glaciar de la Península. En tan solo seis años ha sufrido 126 incendios, que han abrasado alrededor de 12.000 hectáreas. Casi todos los fuegos eran intencionados.</p>
+
+<p>Entre las principales motivaciones detectadas se encuentran la regeneración de pastos y eliminación de matorrales por parte de pastores y ganaderos o la reproducción de fuegos mal extinguidos.</p>
         	</div>
             
             
         	<div id="explicacion" class="txtf">
-				<p>La <a  target="_blank"="http://civio.es">Fundación Ciudadana Civio</a>, ha tenido acceso a la base de datos nacional de incendios forestales del Ministerio de Agricultura, Alimentación y Medio Ambiente. Hasta ahora, solo había <a href="http://www.magrama.gob.es/es/biodiversidad/temas/defensa-contra-incendios-forestales/estadisticas-de-incendios-forestales/" target="_blank">estadísticas</a>. Por primera vez, información tan detallada sobre incendios ve la luz pública.</p>
+				<p>La <a  target="_blank"="http://civio.es">Fundación Ciudadana Civio</a> ha tenido acceso a la base de datos nacional de incendios forestales del Ministerio de Agricultura, Alimentación y Medio Ambiente. Hasta ahora, solo había <a href="http://www.magrama.gob.es/es/biodiversidad/temas/defensa-contra-incendios-forestales/estadisticas-de-incendios-forestales/" target="_blank">estadísticas</a>. Por primera vez, información tan detallada sobre incendios ve la luz pública.</p>
  
 <p>"Visita guiada" es una selección de ocho historias destacadas entre 2001 y 2010 (últimos datos disponibles).</p>
  
-<p>En "Explore los incendios" puede interactuar con los fuegos de 100 hectáreas o más, seleccionar aquéllos que más le interesen o localizar los cercanos a un municipio. Esta es una buena herramienta para poner en contexto los incendios que están ocurriendo.</p>
+<p>En "Explora los incendios" puedes interactuar con los fuegos de 100 hectáreas o más, seleccionar aquellos que más te interesen o localizar los cercanos a un municipio. Esta es una buena herramienta para poner en contexto los incendios que están ocurriendo.</p>
  
-<p>Abajo, podrá ver qué pasó año a año o incluso descargar los datos para comprobarlos.</p>
+<p>Abajo, podrás ver qué pasó año a año o incluso descargar los datos para comprobarlos.</p>
+<p>Y si quieres que sigamos investigando, puedes <a href="http://www.goteo.org/">hacer una donación</a>.</p>
         	</div>
         </div>
         
@@ -344,7 +359,7 @@ Casi todos los fuegos eran intencionados. Entre las principales causas detectada
      
      
     <div class="firmafuente">Realizado por la <a href="http://civio.es" target="_blank">Fundación Ciudadana Civio</a>, en colaboración con <a href="http://twitter.com/jjelosua/" target="_blank">Juan Elosua</a> y <a href="http://thisisvisual.info" target="_blank">This is Visual</a>.<br />
-	<strong>Fuente:</strong> Base de Datos Nacional de Incendios Forestales (EGIF) 2001-2010. Si la geolocalización exacta del incendio no estaba disponible se utilizó una aproximación al municipio.</div>
+	<strong>Fuente:</strong> Base de Datos Nacional de Incendios Forestales (EGIF) 2001-2010. Si la geolocalización exacta del incendio no estaba disponible se aproximó al municipio.</div>
         
     </div>
     

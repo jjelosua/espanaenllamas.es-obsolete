@@ -21,6 +21,7 @@
 	padding:10px; 
 	position:relative;
 	color:#666;
+	margin:0 auto;
 }
 
 #super-contenedor .fb-send
@@ -44,7 +45,7 @@
 	width:100%; 
 	font-family: Arial, Helvetica, sans-serif;
 	font-size:35px; 
-	color:#3F5974; 
+	color:#FF6633; 
 	padding-bottom:5px; 
 	margin-bottom:5px; 
 	color:#000;
@@ -87,7 +88,7 @@
 
 #super-contenedor .leyenda-burbujas
 { 
-	margin: 0 auto
+	margin: 0 auto;
 	width:370px;
 	float:left; display:inline;
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -132,7 +133,7 @@
 
 #super-contenedor .firmafuente a
 { 
-	color:#3F5974; 
+	color:#FF6633; 
 	text-decoration:none;
 }
 
@@ -227,11 +228,11 @@
 	margin-left:5px;
 	color:#FFF;
 	background:#97B6C9;
-	background-image: -webkit-linear-gradient(top, rgba(9,123,108,1) 0%,rgba(128,189,181,1) 100%);
-   background-image:    -moz-linear-gradient(top, rgba(9,123,108,1) 0%,rgba(128,189,181,1) 100%);
-   background-image:     -ms-linear-gradient(top, rgba(9,123,108,1) 0%,rgba(128,189,181,1) 100%);
-   background-image:      -o-linear-gradient(top, rgba(9,123,108,1) 0%,rgba(128,189,181,1) 100%);
-   background-image:         linear-gradient(top, rgba(9,123,108,1) 0%,rgba(128,189,181,1) 100%);
+	background-image: -webkit-linear-gradient(top, #FF6633 0%,#F60 100%);
+   background-image:    -moz-linear-gradient(top, #FF6633 0%,#F60 100%);
+   background-image:     -ms-linear-gradient(top, #FF6633 0%,#F60 100%);
+   background-image:      -o-linear-gradient(top, #FF6633 0%,#F60 100%);
+   background-image:         linear-gradient(top, #FF6633 0%,#F60 100%);
 }
 
 #super-contenedor .ant.button
@@ -386,7 +387,7 @@ background-image: -ms-linear-gradient(bottom, #FFF 10%, #FFD505 100%);
 	#super-contenedor .cuadro .txtf a
 	{
 		text-decoration:none;
-		color:rgba(9,123,108,1);
+		color:#FF6633;
 		font-weight:bold;
 	}
 	
@@ -521,7 +522,7 @@ background-image: -ms-linear-gradient(bottom, #FFF 10%, #FFD505 100%);
 		{
 			border:0;
 			width:100%;
-			color: rgba(9,123,108,1); 
+			color: #FF6633; 
 			text-align:center;
 			font-weight:bold;
 			margin-top:5px;
