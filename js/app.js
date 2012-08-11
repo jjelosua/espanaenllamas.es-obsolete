@@ -330,6 +330,14 @@ $(document).ready(function(){
 	var c2 = $(".fuego-noint").css("background-color");
 	colorNint = d3.rgb(c2).toString();
 	
+	//Facebook share
+	$("div.facebook").click(function() {
+		var url = "http://www.espanaenllamas.es"
+		var call = "http://www.facebook.com/sharer.php?u="+encodeURIComponent(url);
+		window.open(call,'ventanacompartir', 'toolbar=0, status=0, width=650, height=450, left=400, top=50');    
+		return false;
+	});
+	
 	//Retrieve the map position
 	//map_x = $("#mapa").offset().left;
 	//map_y = $("#mapa").offset().top;
