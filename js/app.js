@@ -138,14 +138,26 @@ $(document).ready(function(){
 			google.maps.event.trigger(map, "resize");
 			
 			//Check which of the news is active
-			var p = $("div.titular-his.active");
+			/*var p = $("div.titular-his.active");
 			if (p.length) {
 				var id = p.attr("id");
 				switchNews(id);
 			}
 			else {
 				resetVis();
+			}*/
+			//Reset tab to original form
+			var p = $("div.titular-his.active");
+			if (p.length) {
+				p.removeClass("active");
+				$("div.cuadro .titf").text("Incendios en detalle a un nivel nunca visto");
+				$("div.cuadro .txtf").html($("div#explicacion").clone());
+				switchNews(0);
 			}
+			else {
+				resetVis();
+			}
+			
 		}
 		return false;
 	});
@@ -174,6 +186,10 @@ $(document).ready(function(){
 			var tit = $(this).text();
 			$("div.cuadro .titf").text(tit);
 			$("div.cuadro .txtf").html($("div#t"+id).clone());
+			switchNews(id);
+		}
+		else {
+			var id = $(this).attr("id");
 			switchNews(id);
 		}
 	});
