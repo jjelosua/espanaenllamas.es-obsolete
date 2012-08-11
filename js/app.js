@@ -696,12 +696,16 @@ function switchNews(id) {
 			curFCCAA = 14;
 			update();
 			break;
-		//El incendio más mortífero
+		//2005: El peor año de la década
 		case "5":
-			resetVis();
+			/*resetVis();
 			var f = fires["2005190182"];
 			map.setCenter(f.gLatLng);
     		map.setZoom(10);
+    		*/
+    		resetFilters();
+			currentYear=2005;
+			update();
 			break;
 		//2006: Galicia - Año Negro
 		case "6":

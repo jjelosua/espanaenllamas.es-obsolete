@@ -21,7 +21,7 @@ Explicación de los campos presentes en el CSV:
 (en minutos)
 -TIME_EXT: Tiempo transcurrido hasta la extinción del incendio 
 (en minutos)
--IDGRUPOCAUSA: Identificador del grupo de causa del incendio
+-IDGRUPOCAUSA: Identificador del grupo de causa del incendio (*)
 -DESC_CAUSA: Descripción de la causa
 -PERSONAL: Número de personas que han participado en la 
 extinción del incendio
@@ -33,3 +33,11 @@ extinción del incendio
 Muchos incendios no disponen de estas cifras.
 -PERDIDAS: Pérdidas económicas asociadas al incendio tal y como figuran en EGIF. 
 Muchos incendios no disponen de estas cifras.
+
+(*) Descripción de cada grupo de causa
+1 RAYO
+2 NEGLIGENCIAS Y CAUSAS ACCIDENTALES
+3 NEGLIGENCIAS Y CAUSAS ACCIDENTALES
+4 INTENCIONADO
+5 CAUSA DESCONOCIDA
+6 INCENDIO REPRODUCIDO
