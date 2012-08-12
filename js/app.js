@@ -270,9 +270,8 @@ $(document).ready(function(){
 		window.location.href='data/data.zip'
 	});
 	
-	//TODO: Metodology
 	$("div#metod-btn").click(function() {
-		window.location.href='metodologia.html'
+		window.location.href='metod/metodologia.html'
 	});
 	
 	/*******************filters control*******************/
