@@ -30,6 +30,7 @@
 	float: right;
 	top:7px;
 	right:10px;
+	width:200px;
 }
 
 #super-contenedor .apilar
@@ -68,15 +69,6 @@
 	opacity:.5;
 	filter:alpha(opacity=50%);
 }
-
-
-/*#super-contenedor .facebook
-{
-	position:absolute;
-	float: right;
-	top:35px;
-	right:10px;
-}*/
 
 #super-contenedor .facebook:hover
 { 
@@ -167,11 +159,6 @@
 { 
 	border-left:1px solid #EBEBEB;
 	border-right:1px solid #EBEBEB;
-}
-
-#super-contenedor .redes-sociales
-{ 
-	width:160px;
 }
 
 #super-contenedor #segunda-parte .titu-metodologia
@@ -560,7 +547,7 @@ background-image: -ms-linear-gradient(bottom, #FFF 10%, #FFD505 100%);
    	font-size:12px;
    	color:#333;
    	z-index:230;
-	top:223px;
+	top:258px;
 	background:#FFF;
 	right:80px;
 }
@@ -785,7 +772,7 @@ background-image: -ms-linear-gradient(bottom, #FFF 10%, #FFD505 100%);
 		width:200px; height:50px;
 		position:absolute; 
 		background:#FFF;
-		top:190px; right:10px;
+		top:225px; right:10px;
 		z-index:223;
 		padding: 5px;
 		font-family: Arial, Helvetica, sans-serif;
