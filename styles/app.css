@@ -462,7 +462,7 @@ background-image: -ms-linear-gradient(bottom, #FFF 10%, #FFD505 100%);
 		display:inline; float:left;
 		position:absolute;
 		z-index:300;
-		top:290px;
+		top:300px;
 		left:10px;
 	}
 	
