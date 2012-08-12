@@ -272,7 +272,7 @@ $(document).ready(function(){
 	
 	//TODO: Metodology
 	$("div#metod-btn").click(function() {
-		return false;
+		window.location.href='metodologia.html'
 	});
 	
 	/*******************filters control*******************/

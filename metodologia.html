@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<title>Así se hizo España en llamas | Una década de incendios forestales</title>
+	<link rel="stylesheet" href="styles/app.css"/>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+  		_gaq.push(['_setAccount', 'UA-34028059-1']);
+  		_gaq.push(['_trackPageview']);
+
+  		(function() {
+    		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  		})();
+	</script>
+</head>
+
+<body>
+
+<div id="super-contenedor" class="estirar">
+
+	<div class="titular-met estirar">Así se hizo España en llamas <span>| Una década de incendios forestales (2001-2010)</span></div>
+    
+    <div class="tira-botones">
+    <a href="index.html"><img class="apilar boton" src="img/home.png" alt="Volver a España en Llamas" /> <span  class="apilar">Volver a la aplicación</span></a>
+    </div>
+    
+    <div id="segunda-parte">
+    
+    <div class="col1">
+    	<div class="titu-metodologia">Equipo</div>
+        <div class="txt-metodologia">
+        	<p>'España en llamas' es una aplicación de la Fundación Ciudadana Civio realizada en colaboración con Juan Elosua y This is Visual.</p>
+
+			<p>Obtención, procesamiento y visualización de datos, programación y desarrollo <strong><a href="http://es.linkedin.com/pub/juan-elosua/b/274/689" target="_blank">Juan Elosua</strong></a></p>
+			<p>Análisis de datos, redacción de historias y gestión del proyecto <strong>Hugo Garrido y Mar Cabra, <a href="http://civio.es" target="_blank">Fundación Ciudadana Civio</a></strong></p>
+			<p>Diseño y usabilidad <strong><a href="http://chiquiesteban.com" target="_blank">Chiqui Esteban</a>, <a href="http://thisisivisual.info" target="_blank">This is Visual</a></strong></p>
+            
+            <p>Si quieres contactar con el equipo, escríbenos un email a <a href="mailto:contacto@civio.es">contacto@civio.es</a></p>
+        </div>       
+    </div>
+    
+    
+    <div class="col1 central">
+    	<div class="titu-metodologia">Metodología</div>
+        <div class="txt-metodologia">
+        	<p>Este proyecto empezó en noviembre de 2011 leyendo. No un libro, sino la web de Ministerio de Agricultura, Alimentación y Medio Ambiente. Juan, que es un gallego preocupado por el problema de los incendios en su comunidad, vio una frase que le llamó la atención. El Ministerio decía tener una base de datos que guardaba información muy detallada de todos los incendios forestales ocurridos en nuestro país. La "EGIF". Pero en la web, solo había informes en PDF con <a href="http://www.magrama.gob.es/es/biodiversidad/temas/defensa-contra-incendios-forestales/estadisticas-de-incendios-forestales/" target="_blank">estadísticas agregadas</a>.</p>
+ 
+<p>Así que Juan <a href="http://www.magrama.gob.es/es/ministerio/servicios/informacion/informacion-y-atencion-al-ciudadano/informacion.aspx" target="_blank">les pidió</a> la base de datos. Primero para Galicia y después, para toda España. En menos de un mes desde la fecha de recepción, el Ministerio le mandó la base de datos completa: toda la información que se rellenó entre 2001 y 2010 en los <a href="http://www.espanaenllamas.es/data/ParteIncendioForestal.pdf" target="_blank">partes de incendios forestales</a>. Los datos detallados del 2011 no se terminarán de incorporar hasta el tercer trimestre de 2012 (y los incorporaremos en cuanto estén disponibles).</p>
+ 
+<p>Antes de empezar el análisis, se convirtió la base de datos de MS Access a MySQL utilizando esta <a href="http://www.cynergi.com/exportsql-converter.html" target="_blank">utilidad de conversión</a> desarrollada por Cynergi. Además, se convirtieron las coordenadas de localización de los incendios y de los municipios de UTM a coordenadas geográficas WGS 84 utilizando <a href="http://joseguerreroa.wordpress.com/2011/09/24/conversion-masiva-de-coordenadas-utm-a-geograficas-decimales-usando-los-elipsoides-hayford-y-wgs-84/" target="_blank">la herramienta desarrollada</a> por José Guerrero. Por último, se convirtieron los tiempos de control y extinción de fecha y hora a unidades de minutos.</p>
+ 
+<p>En el análisis de la información contenida en la base de datos se detectaron las siguientes carencias de cara a un tratamiento homogéneo de los datos:</p>
+ <ol>
+<li> La causalidad de los incendios no es cierta sino supuesta en más del 50% de los incendios (57,49%).</li>
+
+<li>La geolocalización de los incendios no está informada en más del 20% de los incendios (23,41%):
+
+<ol class="letras"><li>Si no estaba geolocalizado el incendio, se utilizó la del municipio como mejor aproximación.</li>
+
+<li>Si tampoco había datos del municipio, se utilizó el centro de la provincia asignada al incendio, aunque esta aproximación solo fue necesaria en 5 casos (0,33%).</li></ol>
+
+<li>La información de pérdidas económicas y gastos es muy escasa, lo cual hace muy difícil analizar el coste real de los incendios que han ocurrido en España. Solamente podemos mostrar la información incompleta de aquellos datos de los que se cuenta con información:</li>
+
+<ol class="letras"><li>Casi el 40% de los incendios no tienen informados las pérdidas económicas generadas (39,27%)</li>
+
+<li>Más del 60% no proporcionan datos sobre los gastos de extinción incurridos (61,25%)</li></ol>
+
+</li>
+</ol>
+<p>Para la visualización se intentó restringir el número de incendios para que el rendimiento de la misma fuese aceptable. Hemos utilizado la localización del incendio marcado por la base de datos como el centro y marcado la superficie proporcionalmente en un círculo a su alrededor. Esto no quiere decir que el incendio se propagase de forma circular, pero da una idea del tamaño de la superficie quemada real.</p>
+ 
+<p>De los 170.822 incendios que tiene la base de datos EGIF en ese periodo nos hemos centrado en aquellos incendios mayores o iguales a 100 ha de superficie forestal quemada (un total de 1.508 incendios). Aún suponiendo menos del 1% de los incendios disponibles esta selección supone más del 60% de la superficie forestal quemada total en el periodo 2001-2010.</p>
+        </div>       
+    </div>
+    
+    <div class="col1">
+    	<div class="titu-metodologia">Bonus para 'techies'</div>
+        <div class="txt-metodologia">
+        
+        <p>Estas son las herramientas que hemos utilizado en la visualización:</p>
+ 
+		<p><strong><a href="https://developers.google.com/maps/documentation/javascript/" target="_blank">Google Maps API v3</a></strong><br /> Tanto como proveedor de imágenes (Tiles) del mapa como para la superposición de los incendios sobre el mismo. También se ha utilizado su librería "Places" para la localización de un municipio dentro de la visualización.</p>
+ 
+		<p><strong><a href="http://d3js.org/" target="_blank">D3.js</a></strong><br /> Para la asociación de datos al Document Object Model y otros procesos de la visualización.</p>
+ 
+		<p><strong><a href="http://jquery.com/" target="_blank">jQuery</a> y <a href="http://jqueryui.com/" target="_blank">jQuery UI</a></strong><br />Para procesos auxiliares de la visualización.</p>
+    
+    </div>
+    
+    </div>
+    
+     <div class="firmafuente">
+    	<div class="col2">
+        <iframe frameborder="0" height="480px" src="http://www.goteo.org/widget/project/espana-en-llamas" width="250px" scrolling="no"></iframe>
+        </div>
+        
+        <div class="col2">
+				<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+        <script>
+        new TWTR.Widget({
+          version: 2,
+          type: 'search',
+          search: 'Españaenllamas',
+          interval: 30000,
+          title: '#Españaenllamas',
+          subject: 'España en Llamas',
+          width: 360,
+          height: 510,
+          theme: {
+            shell: {
+              background: '#ff6633',
+              color: '#ffffff'
+            },
+            tweets: {
+              background: '#ffffff',
+              color: '#444444',
+              links: '#ff6633'
+            }
+          },
+          features: {
+            scrollbar: true,
+            loop: true,
+            live: true,
+            behavior: 'default'
+          }
+        }).render().start();
+		</script>
+        </div>
+        
+        <div class="col2">
+        	<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Ffundacioncivio&amp;width=305&amp;height=590&amp;colorscheme=light&amp;show_faces=true&amp;border_color=%23EBEBEB&amp;stream=true&amp;header=true&amp;appId=50642095213" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:305px; height:600px;" allowTransparency="true"></iframe>
+        </div>
+        
+        <div class="firmafuente"> 
+        	<div class="apilar"><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/es/deed.en"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/es/88x31.png" /></a></div>
+            <div class="apilar">Publica nuestros contenidos bajo licencia <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/es/deed.en">Reconocimiento-NoComercial-SinObraDerivada 3.0 España (CC BY-NC-ND 3.0).</a>.</div>
+        </div>
+        
+        
+    </div> 
+    
+</div>
+
+</body>
+</html>
