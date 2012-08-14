@@ -545,7 +545,7 @@ function formatValue(a) {
 	var s = a.toString(),
 		i = a.toString().indexOf(".");
 
-	i > -1 && (s = a.toString().substring(0, i));
+	i > -1 && (s = Math.round(a).toString());
 	if (s.length > 6) {
 		v = s.substring(0, s.length - 6) + "." + s.substring(s.length - 6, s.length - 3) + "." + s.substring(s.length - 3, s.length);
 	}
@@ -553,7 +553,7 @@ function formatValue(a) {
 		v = s.substring(0, s.length - 3) + "." + s.substring(s.length - 3, s.length);
 	}
 	else {
-		i > -1 ? v = s + "," + a.toString().substring(i + 1, i + 3): v = s;
+		i > -1 ? v = a.toString().substring(0, i) + "," + a.toString().substring(i + 1, i + 3): v = s;
 	}
 	return v
 }
