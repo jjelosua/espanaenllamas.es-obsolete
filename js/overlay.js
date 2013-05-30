@@ -19,91 +19,93 @@
 
 //constructor function
 function FireOverlay () {
-	this.setMap(map);
+  this.setMap(map);
 }
 	
 FireOverlay.prototype = new google.maps.OverlayView();
 
 //OnAdd function
 FireOverlay.prototype.onAdd = function() {
-  	// Create the DIV and set some basic attributes.
-    var layer = d3.select(this.getPanes().overlayMouseTarget).append("div")
-        .attr("class", "fireLayer");
+  // Create the DIV and set some basic attributes.
+  var layer = d3.select(this.getPanes().overlayMouseTarget).append("div")
+              .attr("class", "fireLayer");
 };
 
 //draw function
 FireOverlay.prototype.draw = function(force) {
-	var projection = this.getProjection();
-	
-	//Math to obtain the appropiate radius
-	var sw = map.getBounds().getSouthWest();
-	var ne = map.getBounds().getNorthEast();
-	var swProj = projection.fromLatLngToContainerPixel(sw);
-  	var neProj = projection.fromLatLngToContainerPixel(ne);
-  	var w = neProj.x-swProj.x;
-	var h = swProj.y-neProj.y;
-	var pxDiag = Math.sqrt((w*w) + (h*h));
-	var mDiag = google.maps.geometry.spherical.computeDistanceBetween(ne,sw);
-	var pxPerM = pxDiag/mDiag;
+  //The smallest the fire the higher the zIndex to be able to select every overlapping fire
+  var ZINDEX_OFFSET = 201
+  var projection = this.getProjection();
+  
+  //Math to obtain the appropiate radius
+  var sw = map.getBounds().getSouthWest();
+  var ne = map.getBounds().getNorthEast();
+  var swProj = projection.fromLatLngToContainerPixel(sw);
+  var neProj = projection.fromLatLngToContainerPixel(ne);
+  var w = neProj.x-swProj.x;
+  var h = swProj.y-neProj.y;
+  var pxDiag = Math.sqrt((w*w) + (h*h));
+  var mDiag = google.maps.geometry.spherical.computeDistanceBetween(ne,sw);
+  var pxPerM = pxDiag/mDiag;
         
-    var f = d3.select(".fireLayer").selectAll("svg")
-        .data(d3.entries(fires))
-        .each(refresh)
-        .enter().append("svg:svg")
-        .attr("class", "wrapper")
-        .each(load);
+  var f = d3.select(".fireLayer").selectAll("svg")
+          .data(d3.entries(fires))
+          .each(refresh)
+          .enter().append("svg:svg")
+          .attr("class", "wrapper")
+          .each(load);
 
-
-    function load(d) {
-    	var r = d.value.gRadio * pxPerM;
-    	var offset = ~~(r+1);
-        fProj = projection.fromLatLngToDivPixel(d.value.gLatLng);
-        var f = d3.select(this)
+  function load(d,i) {
+    var zIndex = i+ZINDEX_OFFSET;
+    var r = d.value.gRadio * pxPerM;
+    var offset = ~~(r+1);
+    fProj = projection.fromLatLngToDivPixel(d.value.gLatLng);
+    var f = d3.select(this)
             .style("left", (fProj.x-offset) + "px")
             .style("top", (fProj.y-offset) + "px")
             .style("width", (2*offset) + "px")
             .style("height", (2*offset) + "px")
-            .style("z-index",function (d) {return d.value.zIndex;})
+            .style("z-index",zIndex)
             .append("svg:circle")
-        	.attr("class", "fireCircle")
-        	.attr("r", r)
-        	.attr("cx", offset)
-        	.attr("cy", offset)
-        	.attr("fill", d.value.color)
-        	.on("mouseover", function (d, i) {return showTooltip(d)})
-			.on("mouseout", function (d, i) {return hideTooltip(d)})
-			.on("click", function (d, i) {return showCartela(d)});
-		return f;
-    }
+            .attr("class", "fireCircle")
+            .attr("r", r)
+            .attr("cx", offset)
+            .attr("cy", offset)
+            .attr("fill", d.value.color)
+            .on("mouseover", function (d, i) {return showTooltip(d)})
+            .on("mouseout", function (d, i) {return hideTooltip(d)})
+            .on("click", function (d, i) {return showCartela(d)});
+    return f;
+  }
     
-    function refresh(d) {
-    	var r = d.value.gRadio * pxPerM;
-    	var offset = ~~(r+1);
-        fProj = projection.fromLatLngToDivPixel(d.value.gLatLng);
-        var f = d3.select(this)
+  function refresh(d,i) {
+    var zIndex = i+ZINDEX_OFFSET;
+    var r = d.value.gRadio * pxPerM;
+    var offset = ~~(r+1);
+    fProj = projection.fromLatLngToDivPixel(d.value.gLatLng);
+    var f = d3.select(this)
             .style("left", (fProj.x-offset) + "px")
             .style("top", (fProj.y-offset) + "px")
             .style("width", (2*offset) + "px")
             .style("height", (2*offset) + "px")
-            .style("z-index",function (d) {if (!d.value.visible) return -1;
-            								else return d.value.zIndex;})
+            .style("z-index",function (d) {return !d.value.visible ? -1 : zIndex;})
             .select(".fireCircle")
             .attr("r", r)
-        	.attr("cx", offset)
-        	.attr("cy", offset)
-        	.style("visibility",function (d) {if (d.value.visible) return "visible"; else return "hidden";})
-        return f;
-    }
+            .attr("cx", offset)
+            .attr("cy", offset)
+            .style("visibility",function (d) {if (d.value.visible) return "visible"; else return "hidden";})
+    return f;
+  }
 }
 
 //show function
 FireOverlay.prototype.show = function() {
-	d3.select(".fireLayer")
-	.style("visibility","visible");
+  d3.select(".fireLayer")
+  .style("visibility","visible");
 }
 
 //hide function
 FireOverlay.prototype.hide = function() {
-	d3.select(".fireLayer")
-	.style("visibility","hidden");
+  d3.select(".fireLayer")
+  .style("visibility","hidden");
 }
