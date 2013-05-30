@@ -1,129 +1,132 @@
 #mini-cartela 
 { 
-	width:202px;
-	background-color: rgba(255,255,255,1);
-	padding: 10px; 
-	position: absolute; 
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:10px;
-	color:#666;
-	z-index:4;
+  width:202px;
+  background-color: rgba(255,255,255,1);
+  padding: 10px; 
+  position: absolute; 
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:10px;
+  color:#666;
+  z-index:4;
 }
 
-	#mini-cartela .pieza-cartela {
-		border-bottom:solid 1px #EBEBEB;
-		padding-bottom:2px;
-		margin-bottom:4px;
-	}
-	
-	#mini-cartela .pob {
-		font-weight:bold;
-		font-size:10px;
-		color:#000;
-		margin-bottom:2px;
-	}
-	
-	#mini-cartela .cifra-cartela {
-		font-size:13px;
-	}
-	
-	#mini-cartela .cifra-cartela span {
-		font-size:9px;
-	}
-	
-	#mini-cartela .cifra-cartela span.fecha {
-		font-size:13px;
-		position: absolute;
-		right:15px;
-	}
-	
-	#mini-cartela .detalles {
-		letter-spacing:-0.03em;
-		font-size:10px;
-		color:#999;
-		padding:2px;
-	}
+  #mini-cartela .pieza-cartela 
+  {
+    border-bottom:solid 1px #EBEBEB;
+    padding-bottom:2px;
+    margin-bottom:4px;
+  }
+  
+  #mini-cartela .pob 
+  {
+    font-weight:bold;
+    font-size:10px;
+    color:#000;
+    margin-bottom:2px;
+  }
+  
+  #mini-cartela .cifra-cartela 
+  {
+    font-size:13px;
+  }
+  
+  #mini-cartela .cifra-cartela span 
+  {
+    font-size:9px;
+  }
+  
+  #mini-cartela .cifra-cartela span.fecha 
+  {
+    font-size:13px;
+    position: absolute;
+    right:15px;
+  }
+  
+  #mini-cartela .detalles 
+  {
+    letter-spacing:-0.03em;
+    font-size:10px;
+    color:#999;
+    padding:2px;
+  }
 
-#cartela {
-	width:210px;
-	background:#FFF;
-	padding:10px;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:10px;
-	color:#666;
+#cartela 
+{
+  width:210px;
+  background:#FFF;
+  padding:10px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:10px;
+  color:#666;
 }
 
-/*
-#cartela {
-	width:210px;
-	background:#FFF;
-	padding:4px;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:10px;
-	color:#666;
-	padding:10px;
-	position:absolute;
-	bottom:20px; left:-50px;
-}*/
-
-	#cartela .pieza-cartela {
-		border-bottom:solid 1px #EBEBEB;
-		padding-bottom:2px;
-		margin-bottom:4px;
-	}
-	
-	#cartela .muni {
-		font-weight:bold;
-		letter-spacing:-0.03em;
-		font-size:15px;
-		color:#000;
-		margin-bottom:2px;
-	}
-	
-	#cartela .int {
-		font-weight:bold;
-		letter-spacing:-0.03em;
-		font-size:13px;
-		color:#FFF;
-		padding:2px;
-		background:#C03;
-		text-align:center;
-	}
-	
-	#cartela .noint {
-		font-weight:bold;
-		letter-spacing:-0.03em;
-		font-size:13px;
-		color:#FFF;
-		padding:2px;
-		background:#439b8f;
-		text-align:center;
-	}
-	
-	#cartela .cifra-cartela {
-		font-size:13px;
-	}
-	
-	#cartela .cifra-cartela span {
-		font-size:9px;
-	}
-	
-	#cartela .cifra-cartela span.fecha {
-		font-size:13px;
-		position: absolute;
-		right:10px;
-	}
-	
-	#cartela ul {
-		list-style-type:none;
-		margin-left:-30px;
-	}
-	
-	#cartela .tit-medios {
-		font-weight:bold;
-		letter-spacing:-0.03em;
-		font-size:12px;
-		color:#000;
-		margin-bottom:2px;
-	}
+  #cartela .pieza-cartela 
+  {
+    border-bottom:solid 1px #EBEBEB;
+    padding-bottom:2px;
+    margin-bottom:4px;
+  }
+  
+  #cartela .muni 
+  {
+    font-weight:bold;
+    letter-spacing:-0.03em;
+    font-size:15px;
+    color:#000;
+    margin-bottom:2px;
+  }
+  
+  #cartela .int 
+  {
+    font-weight:bold;
+    letter-spacing:-0.03em;
+    font-size:13px;
+    color:#FFF;
+    padding:2px;
+    background:#C03;
+    text-align:center;
+  }
+  
+  #cartela .noint 
+  {
+    font-weight:bold;
+    letter-spacing:-0.03em;
+    font-size:13px;
+    color:#FFF;
+    padding:2px;
+    background:#439b8f;
+    text-align:center;
+  }
+  
+  #cartela .cifra-cartela 
+  {
+    font-size:13px;
+  }
+  
+  #cartela .cifra-cartela span 
+  {
+    font-size:9px;
+  }
+  
+  #cartela .cifra-cartela span.fecha 
+  {
+    font-size:13px;
+    position: absolute;
+    right:10px;
+  }
+  
+  #cartela ul 
+  {
+    list-style-type:none;
+    margin-left:-30px;
+  }
+  
+  #cartela .tit-medios 
+  {
+    font-weight:bold;
+    letter-spacing:-0.03em;
+    font-size:12px;
+    color:#000;
+    margin-bottom:2px;
+  }
 
